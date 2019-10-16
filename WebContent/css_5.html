@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.d1 {
+	color: red;
+	text-decoration: underline;
+	border: 1px solid black;
+	height: 200px;
+	text-align: center;
+	letter-spacing: -2px;
+	text-transform: capitalize;
+	text-indent: 10px;
+	word-spacing: 50px;
+	line-height: 200px;
+	/*컨텐츠를 위아래의 중앙에 놓고 싶을때, 이 상자의 높이만큼 line-height 값을 준다.*/
+}
+
+.a1 {
+	color: orange;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid red;
+	width: 1000px;
+}
+</style>
+
+</head>
+<body>
+	<div class="d1">
+		hello world 
+		<a href="#"> go lunch </a> 
+		<a class="a1" href="#"> go school </a>
+		<!-- a태그는 자체적으로 적용된 css를 따라간다. -->
+		<!-- a태그는 직접 클래스를 적용하여 바꿔줘야 한다. -->
+		<p>go guam</p>
+		<!-- 적용된 css가 없으므로 부모를 따라간다. -->
+	</div>
+
+	<div class="d1">
+		<img src="img/cha6.jpg" width="200">
+		<!-- 이미지태그도 인라인태그 -->
+	</div>
+
+	<a class="a1" href="#"> go home </a>
+	<!-- 중앙정렬이 안된다. 인라인태그이므로 가운데 보낼 공간이 없다. -->
+	<!-- 인라인태그는 width값을 갖지 못한다. 오직 자기 컨텐츠의 값만큼의 길이를 가질뿐이다. -->
+	<!-- div로 감싸면 가능 -->
+
+
+</body>
+</html>
